@@ -22,7 +22,7 @@ public class SchotterGenerator : MonoBehaviour
                 newSquare.transform.position = new Vector3((1 * gapMod * (w - width/2)) + (Random.Range(deviation/400 * (h-height), -deviation/400 * (h - height))),
                     1 * gapMod * (h - height/2) + (Random.Range(deviation / 400 * (h - height), -deviation / 400 * (h - height))),
                     0);
-                newSquare.transform.Rotate(new Vector3(0,0, Random.Range(deviation * (h-height), -deviation * (h - height))));
+                newSquare.transform.Rotate(new Vector3(0,0, Random.Range(deviation * (h-height - 1), -deviation * (h - height - 1))));
             }
         }
     }
